@@ -4,13 +4,13 @@ services:
     build:
       context: ./server
     ports:
-      -"6060:6060"
+      - "6060:6060"
     container_name: street-server-side
 
   client:
     build: 
       context: ./client
     ports:
-      -"5050:5050"
+      - "5050:5050"
     container_name: street-client-side
     stdin_open: true
